@@ -27,7 +27,7 @@ body{
 
 #nav .scores{
   position: relative;
-  width: 36.04%; /*75px*/
+  min-width: 36.04%; /*75px*/
   min-height: 65px;
   margin: 5.2%;
   background: hsl(0,0%,100%);
