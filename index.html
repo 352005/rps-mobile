@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="rps.css">
+  <title>Rock, paper, scissors</title>
+</head>
+<body>
+<div id="rulePage">
+  <div class="heading"><h1>RULES</h1></div>
+  <div class="method">
+    <img src="image-rules.svg" alt="methods">
+  </div>
+  <div class="cancel">
+    <img src="icon-close.svg" alt="cancel">
+  </div>
+</div>  
+
+<div id="winPage">
+<div id="nav">
+<div class="logo"><img src="logo.svg" alt="logo"></div>
+ <div class="scores">
+   <p class="score">Score</p>
+   <h1 class="scoreValue"><span id="winScore">0</span> - <span id="loseScore">0</span></h1>
+ </div>
+</div>
+
+<div id="chosen">
+  <div class="player">
+    <div class="pChosen">
+    <div class="chosedPaper">
+    <img class="paperImg" src="icon-paper.svg" alt="paper">
+    </div>
+    
+    <div class="chosedScissors">
+    <img class="scissorsImg" src="icon-scissors.svg" alt="scissors">
+    </div>
+    
+     <div class="chosedRock">
+       <img class="rockImg" src="icon-rock.svg" alt="rock">
+     </div>
+    </div>
+    <h4 style="color: white;">YOU PICKED</h4>
+  </div>
+  <div class="computer">
+    <div class="cChosen">
+      <div class="comPaper">
+        <img class="paperImg" src="icon-paper.svg" alt="paper">
+      </div>
+      
+      <div class="comScissors">
+        <img class="scissorsImg" src="icon-scissors.svg" alt="scissors">
+      </div>
+      
+      <div class="comRock">
+        <img class="rockImg" src="icon-rock.svg" alt="rock">
+      </div>
+    </div>
+    <h4 style="color: white;">THE HOUSE PICKED</h4>
+  </div>
+</div>
+
+<div id="replay">
+  <h1 class="win">YOU WIN</h1>
+  <button onclick="playAgain()" class="replayBtn"><span class="playAgain">PLAY AGAIN</span></button>
+</div>
+
+<div id="ruleBtn">
+  <button onclick="showRules()" class="rules"><span class="rule">Rules</span></button>
+</div>
+</div>
+<div id="nav">
+ <div class="logo"><img src="logo.svg" alt="logo"></div>
+ <div class="scores">
+   <p class="score">Score</p>
+   <h1 class="scoreValue"><span id="realScore">0</span> - <span id="cScore">0</span></h1>
+ </div>
+</div>
+
+<div>
+  <h3 id="timer"></h3>
+</div>
+
+<div id="rps">
+  <div class="paper">
+    <img class="paperImg" src="icon-paper.svg" alt="paper">
+  </div>
+  <div class="scissors">
+    <img class="scissorsImg" src="icon-scissors.svg" alt="scissors">  
+  </div>
+  <div class="rock">
+    <img class="rockImg" src="icon-rock.svg" alt="rock">
+  </div>
+</div>
+
+<div id="ruleBtn">
+  <button onclick="showRules()" class="rules"><span class="rule">Rules</span></button>
+</div>
+<script src="rps2.js"></script>
+</body>
+</html>
