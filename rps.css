@@ -48,10 +48,10 @@ body{
 
 .scores .scoreValue{
   color: hsl(229, 25%, 31%);
-  font-size: 2em;
+  font-size: 1.5em;
   align-items: center;
-  top: .4em;
-  left: 20%; /*20px*/
+  top: .7em;
+  left: 18%; /*20px*/
 }
 
 #rps{
